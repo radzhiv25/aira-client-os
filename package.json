@@ -2,12 +2,12 @@
   "name": "aira-client",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
+    "build": "node init && turbo run build",
+    "dev": "node init && turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "tsc": "turbo run tsc",
-    "start": "turbo run start"
+    "start": "node init && turbo run start"
   },
   "devDependencies": {
     "prettier": "^3.7.4",
